@@ -1,0 +1,106 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+
+.header {
+  height: 50px;
+  background-color: yellow;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.lists-item {
+  display: flex;
+  list-style: none;
+}
+.lists-item li a {
+  margin-left: 20px;
+  font-weight: bold;
+}
+.lists-item li a:hover {
+  opacity: 0.9;
+}
+.header__right {
+  display: flex;
+  align-items: center;
+}
+.input {
+  position: relative;
+}
+.input input {
+  padding: 5px 20px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+}
+.input i {
+  position: absolute;
+  top: 6px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 14px;
+}
+.cart {
+  margin-left: 20px;
+  background-color: rgb(117, 97, 97);
+  padding: 8px 10px;
+  border-radius: 10px;
+}
+.cart a {
+  color: white;
+}
+.cart i {
+  font-size: 14px;
+  margin: 1px;
+}
+
+.content__list {
+  padding: 20px 40px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+.item h4 {
+  text-align: center;
+  margin-top: 5px;
+}
+.item img {
+  width: 260px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.item__bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.price p {
+  color: rgba(255, 0, 0, 0.664);
+  font-weight: bold;
+  margin-left: 10px;
+}
+.add__Cart button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  color: white;
+  background-color: yellowgreen;
+  font-weight: bold;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.footer {
+  height: 50px;
+  background-color: cornflowerblue;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

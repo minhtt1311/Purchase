@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="../css/cart.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__left">
+          <ul class="lists-item">
+            <li>
+              <a href="http://127.0.0.1:5500/Bai1/html/index.html#"
+                >Trang Chủ</a
+              >
+            </li>
+            <li>
+              <a href="http://127.0.0.1:5500/Bai1/html/index.html#">Sản Phẩm</a>
+            </li>
+            <li><a href="#">Liên Hệ</a></li>
+            <li><a href="#">Giới Thiệu</a></li>
+          </ul>
+        </div>
+        <div class="header__right">
+          <div class="input">
+            <input type="text" placeholder="Tìm kiếm sản phẩm" />
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+          <p class="cart">
+            <a href="#" class="giohang">
+              <i class="fa-solid fa-cart-plus"></i>
+              Giỏ Hàng
+            </a>
+          </p>
+        </div>
+      </header>
+
+      <div class="body">
+        <h1>Danh sách sản phẩm</h1>
+        <table class="table"></table>
+      </div>
+      <div class="price">
+        <div class="soluong"></div>
+
+        <h4 class="thanhtien">Thành Tiền:</h4>
+        <button class="buy">Mua</button>
+        <button class="bought">
+          <a href="http://127.0.0.1:5500/Bai1/html/orderList.html">
+            Sản phẩm đã mua</a
+          >
+        </button>
+      </div>
+    </div>
+
+    <div class="modal">
+      <div class="buy-product">
+        <form action="">
+          <div class="name">
+            <label for="">Họ và tên</label>
+            <div class="input__name">
+              <input type="text" placeholder="Tên" name="" id="name" />
+              <input type="text" placeholder="Họ" name="" id="surname" />
+            </div>
+            <p class="errName"></p>
+          </div>
+          <div class="email">
+            <label for="">Email</label>
+            <input type="text" placeholder="Email" id="email" />
+            <p class="errEmail"></p>
+          </div>
+
+          <div class="phone">
+            <label for="">Số điện thoại</label>
+            <input type="text" placeholder="SĐT" id="sdt" />
+            <p class="errSDT"></p>
+          </div>
+
+          <div class="address">
+            <label for="">Địa chỉ</label>
+            <select id="province">
+              <option value="">--- Chọn Thành Phố/Tỉnh ---</option>
+            </select>
+            <select id="district">
+              <option value="">--- Chọn Quận/Huyện ---</option>
+            </select>
+            <select id="ward">
+              <option value="">--- Chọn Xã/Phường ---</option>
+            </select>
+            <input
+              type="text"
+              placeholder="Địa chỉ nhà"
+              name=""
+              id="addrssHome"
+            />
+            <p class="errProvince"></p>
+          </div>
+          <div class="note">
+            <label for="">Lời nhắn</label>
+            <textarea
+              name=""
+              id="note"
+              placeholder="Ghi chú"
+              cols="20"
+              rows="4"
+            ></textarea>
+          </div>
+          <div class="button">
+            <button class="btn btn-cancel primary">Huỷ</button>
+            <button class="btn btn-comfirm yellow">Xác Nhận</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="../js/cart.js"></script>
+    <script src="../js/validate.js"></script>
+    <script src="../js/buyProduct.js"></script>
+    <script src="../js/api.js"></script>
+  </body>
+</html>

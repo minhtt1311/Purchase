@@ -1,0 +1,227 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.header {
+  height: 50px;
+  background-color: yellow;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.lists-item {
+  display: flex;
+  list-style: none;
+}
+.lists-item li a {
+  margin-left: 20px;
+  font-weight: bold;
+}
+.lists-item li a:hover {
+  opacity: 0.9;
+}
+.header__right {
+  display: flex;
+  align-items: center;
+}
+.input {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.input input {
+  padding: 5px 20px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  margin: auto;
+}
+.input i {
+  position: absolute;
+  top: 6px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 14px;
+}
+.cart {
+  margin-left: 20px;
+  background-color: rgb(117, 97, 97);
+  padding: 8px 10px;
+  border-radius: 10px;
+}
+.cart a {
+  color: white;
+}
+.cart i {
+  font-size: 14px;
+  margin: 1px;
+}
+
+.body {
+  width: 60%;
+  margin: 10px auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+}
+h1 {
+  color: yellowgreen;
+  margin-bottom: 30px;
+}
+img {
+  width: 60px;
+  height: 40px;
+  object-fit: cover;
+}
+tr,
+th,
+td {
+  text-align: center;
+}
+td {
+  padding-top: 20px;
+  width: 120px;
+  text-align: center;
+}
+td button {
+  padding: 2px 5px;
+  margin: 5px 7px;
+}
+td input {
+  outline: none;
+  padding: 5px;
+  border: none;
+  background-color: #ccc;
+  border-radius: 5px;
+}
+td i {
+  cursor: pointer;
+}
+.price {
+  margin: 30px;
+}
+.price h4 {
+  margin-bottom: 10px;
+}
+.price button {
+  padding: 7px 20px;
+  border: none;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: yellowgreen;
+}
+
+/* buy */
+
+.modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(12, 1, 1, 0.6);
+  display: none;
+}
+.buy-product {
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 300px;
+  background-color: #ccc;
+  margin: 0 auto;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  margin-top: 5px;
+  animation: modalBuy 0.3s linear;
+}
+
+.hide {
+  display: block;
+}
+.buy-product label {
+  margin-top: 5px;
+  margin-left: 2px;
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  color: darkblue;
+}
+.input__name {
+  display: flex;
+  justify-content: space-between;
+}
+
+input {
+  padding: 4px 10px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  margin: 2px 2px 10px 2px;
+  width: 100%;
+}
+.input__name input {
+  padding: 4px 10px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  margin: 5px 2px 10px 2px;
+  width: 50%;
+}
+select {
+  display: block;
+  width: 100%;
+  padding: 4px 2px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  margin: 5px 0;
+  width: 100%;
+}
+.note textarea {
+  width: 100%;
+  outline: none;
+}
+.button .btn {
+  padding: 7px 15px;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: white;
+}
+.primary {
+  background-color: red;
+}
+.yellow {
+  background-color: yellowgreen;
+  margin-top: 5px;
+}
+.modal p {
+  margin-left: 6px;
+  margin-top: -7px;
+  font-size: 13px;
+  font-weight: 600;
+  color: red;
+}
+
+@keyframes modalBuy {
+  from {
+    margin-top: -150px;
+    opacity: 0;
+  }
+  to {
+    margin-top: 0px;
+    opacity: 1;
+  }
+}

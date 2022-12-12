@@ -1,0 +1,126 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.header {
+  height: 50px;
+  background-color: yellow;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.lists-item {
+  display: flex;
+  list-style: none;
+}
+.lists-item li a {
+  margin-left: 20px;
+  font-weight: bold;
+}
+.lists-item li a:hover {
+  opacity: 0.9;
+}
+.header__right {
+  display: flex;
+  align-items: center;
+}
+.input {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.input input {
+  padding: 5px 20px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+}
+.input i {
+  position: absolute;
+  top: 6px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 14px;
+}
+.cart {
+  margin-left: 20px;
+  background-color: rgb(117, 97, 97);
+  padding: 8px 10px;
+  border-radius: 10px;
+}
+.cart a {
+  color: white;
+}
+.cart i {
+  font-size: 14px;
+  margin: 1px;
+}
+
+.body {
+  width: 80%;
+  margin: 10px auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+}
+.tableInfo {
+  margin: 20px 0px 20px 0px;
+}
+.tableSP {
+  display: none;
+}
+.detail {
+  margin-left: 20px;
+  color: blue;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  cursor: pointer;
+}
+.detail i {
+  font-size: 23px;
+  margin-left: 2px;
+}
+h1 {
+  color: red;
+  margin-bottom: 0px;
+}
+img {
+  width: 60px;
+  height: 40px;
+  object-fit: cover;
+}
+td i {
+  font-size: 22px;
+  cursor: pointer;
+  color: blue;
+}
+tr,
+th,
+td {
+  text-align: center;
+}
+td,
+tr,
+th {
+  padding-top: 20px;
+  width: 150px;
+  text-align: center;
+}
+td button {
+  padding: 2px 5px;
+  margin: 5px 7px;
+}
+td input {
+  outline: none;
+  padding: 5px;
+  border: none;
+  background-color: #ccc;
+  border-radius: 5px;
+}
